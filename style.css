@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #373B44;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+main {
+  border-radius: 10px;
+  background-color: white;
+  width: 422px;
+  padding: 20px 10px;
+}
+main .heading
+{
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+main .quote_line
+{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 3px;
+}
+main .quoteby
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    font-style: normal;
+    color: #2980b9;
+}
+main .quoteby::selection
+{
+    color: white;
+    background-color: rgb(237, 100, 180);
+}
+main .border .emoji
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+main .border .emoji .emojis
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 32px;
+    border:2px solid #2980b9;
+    color: #2980b9;
+    border-radius: 50%;
+    text-align: center;
+    margin: 8px 3px;
+}
+main .border .emoji .emojis:hover
+{
+ opacity: 1;   
+ border: none;
+ background-color: rgb(12, 64, 79);
+ color: white;
+}
+main .btn button
+{
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    color: white;
+    background-color: rgb(85, 152, 179);
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: none;
+}
+main .btn button:hover
+{
+    background-color: #2980b9;
+    border-radius: 5px;
+    letter-spacing: 3px;
+}
